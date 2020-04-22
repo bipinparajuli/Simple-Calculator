@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head {
+            background-color: #74B9FF;
+            height: 50px;
+            width: 220px;
+            margin-bottom: 5px;
+            margin-left: 7px;
+            color: white;
+            font-size: 30px;
+        }
+        
+        .num {
+            cursor: pointer;
+            transform: scale(1.1);
+            padding: 20px;
+            background-color: black;
+            color: blanchedalmond;
+        }
+        
+        .keys {
+            margin: 10px;
+            margin-bottom: 5px;
+        }
+        
+        button {
+            height: 50px;
+            width: 50px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cointainer">
+        <input type="text" class="head">
+        <div class="keys">
+            <button value="0" onclick="fun(0)" class="num">0</button>
+            <button value="1" onclick="fun(1)" class="num">1</button>
+            <button value="2" onclick="fun(2)" class="num">2</button>
+            <button value="+" onclick="fun('+')" class="num" style="background-color: #EEC213">+</button>
+        </div>
+        <div class="keys">
+            <button value="3" onclick="fun(3)" class="num">3</button>
+            <button value="4" onclick="fun(4)" class="num">4</button>
+            <button value="5" onclick="fun(5)" class="num">5</button>
+            <button value="-" onclick="fun('-')" class="num" style="background-color:#BB2CD9">-</button>
+        </div>
+        <div class="keys">
+            <button value="6" onclick="fun(6)" class="num">6</button>
+            <button value="7" onclick="fun(7)" class="num">7</button>
+            <button value="8" onclick="fun(8)" class="num">8</button>
+            <button value="x" onclick="fun('*')" class="num" style="background-color:#BA2F16">x</button>
+        </div>
+        <div class="keys">
+            <button value="9" onclick="fun(9)" class="num">9</button>
+            <button class="num" onclick="fun('C')" style="background-color: red">C</button>
+            <button class="num" onclick="fun('=')">=</button>
+            <button value="/" onclick="fun('/')" class="num" style="background-color: green;">/</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
